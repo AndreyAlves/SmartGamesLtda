@@ -1,0 +1,1037 @@
+html{
+  width: 100%; height: 100%;
+  border: 0px solid white;
+  background-color: #1C1C1C;
+  overflow-x: hidden;
+}
+
+#area_login{
+  width: 100%; height: 100%;
+  float: right;
+  display: block;
+	z-index: 9999;
+  -webkit-animation: fadeIn 2s ease-in-out;
+  -moz-animation: fadeIn 2s ease-in-out;
+  -o-animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#btn_entrar{
+	width: 200px; height: 50px;
+	margin-left: 100px;
+  margin-top: 50px;
+  border: 1px solid white;
+  border-radius: 100px;
+  transition: 1s;
+}
+
+#btn_entrar:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+	transition: 0.3s;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+#btn_entrar input{
+	width: 100%; height: 100%;
+	background-color: transparent;
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 100px;
+	transition: 1s;
+  color: white;
+}
+
+#btn_cadastrar{
+	width: auto; height: 30px;
+	margin-left: 00px;
+  margin-top: 5px;
+
+}
+
+#btn_cadastrar p{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'dosislight';
+  color: #088A68;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+		filter: brightness(90%);
+    margin-left: -30px;
+}
+
+#slideshow img{
+	width: 100%; height: 100%;
+
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+nav{
+  width: 100%; height: 80px;
+  background-color: #000;
+  opacity: 0.9;
+  margin-top: -8px;
+  margin-left: -10px;
+  position: fixed;
+  z-index: 9999;
+}
+
+#conteudo_nav{
+  width: 1750px; height: 80px;
+  border: 0px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input:focus, button:focus, textarea:focus, select:focus {
+   box-shadow: 0 0 0 0;
+   border: 0 none;
+   outline: 0;
+}
+
+a{
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+#form_modal{
+	width: 400px;
+	margin: 4em auto;
+	padding: 3em 2em 2em 2em;
+	background: #000;
+	border: 1px solid #fff;
+	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+#hgroup_modal {
+	width: 550px;
+	height: auto;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid white;
+	border-radius: 5px;
+  font-family: Calibri;
+  font-size: 20px
+}
+
+#hgroup_modal p{
+	margin-top:10px;
+}
+
+.h1_modal, .h3_modal { font-weight: 300; }
+
+.h1_modal { color: #636363; }
+
+.h3_modal { color: #4a89dc; }
+
+.group {
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.group p{
+	text-align: justify;
+	font-size: 20px;
+	font-family: Calibri;
+}
+
+.input_modal {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: #000;
+	color: #fff;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+.input_modal:focus { outline: none; }
+
+/* Label */
+.label_modal {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	-webkit-transition:all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+/* active */
+.input_modal:focus ~ .label_modal, .input_modal.used ~ .label_modal {
+	top: -20px;
+  -webkit-transform: scale(.75);
+  transform: scale(.75); left: -2px;
+	/* font-size: 14px; */
+	color: #088A68;
+}
+
+/* Underline */
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #088A68;
+	-webkit-transition:all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+/* active */
+.input_modal:focus ~ .bar:before, .input_modal:focus ~ .bar:after { width: 50%; }
+
+/* Highlight */
+.highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/* active */
+.input_modal:focus ~ .highlight {
+	-webkit-animation: inputHighlighter 0.3s ease;
+	 animation: inputHighlighter 0.3s ease;
+}
+
+/* Animations */
+@-webkit-keyframes inputHighlighter {
+	from { background: #4a89dc; }
+	to 	{ width: 0; background: transparent; }
+}
+
+@keyframes inputHighlighter {
+	from { background: #4a89dc; }
+	to 	{ width: 0; background: transparent; }
+}
+
+.window{
+  display:none;
+  width:500px;
+  height:600px;
+  position:absolute;
+  left:0;
+  top:0;
+  background:transparent;
+  z-index:9900;
+  padding:10px;
+  border-radius:10px;
+  transition:2s;
+  font-family: Calibri;
+}
+
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+
+#mascara_usuario{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+
+.fechar{display:block; text-align:right;}
+
+#logo_portal{
+  width: 250px; height: 80px;
+  border: 0px solid white;
+  margin-left: 80px;
+  z-index: 9999;
+  position: absolute;
+}
+
+#logo_portal img{
+  width: 100%; height: 100%;
+}
+
+#logo_portal p{
+  font-size: 40px;
+  color: white;
+  font-family: Calibri;
+  margin-top: 15px;
+}
+
+#area_menu{
+  width: 600px; height: 70px;
+  border: 0px solid white;
+
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 0px;
+}
+
+#area_menu a{
+  height: 60px;
+
+  color: white;
+  font-family: Calibri;
+  margin-left: 100px;
+  margin-top: 15px;
+  float: left;
+  transition: 0.3s;
+}
+
+#area_menu a:hover{
+  border-bottom: 3px solid white;
+  transition: 0.3s;
+}
+
+#txt_menu{
+  width: 100px; height: 50px;
+}
+
+#area_menu p{
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+#form_buscar{
+  position: absolute;
+}
+
+#busca_menu{
+  width: 500px; height: 35px;
+  margin-top: 20px;
+  margin-left: 1200px;
+  margin-bottom: auto;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 20px;
+  font-family: 'dosislight';
+  font-weight: bold;
+  color: #088A68;
+  transition: 1s;
+  padding-left: 20px;
+
+}
+
+#busca_menu:hover{
+  padding-left: 20px;
+  transition: 1s;
+  background-color: white;
+}
+
+#btn_buscar{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-left: 1680px;
+  margin-top: -39px;
+  background-color: transparent;
+  border: 0px solid;
+  transition: 1s;
+}
+
+#btn_buscar img{
+  width: 30px;
+  height: 30px;
+}
+
+#btn_buscar:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s;
+}
+
+
+section{
+  width: 100%; height: auto;
+  border: 0px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+#principal{
+  width: 100%; height: auto;
+  border: 0px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#conteudo_login{
+  width: 700px; height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+#template_home{
+  width: 1900px; height: 950px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  -webkit-animation: fadeIn 1s ease-in-out;
+	-moz-animation: fadeIn 1s ease-in-out;
+	-o-animation: fadeIn 1s ease-in-out;
+	animation: fadeIn 1s ease-in-out;
+}
+
+#template_home img{
+  width: 100%; height: 100%;
+}
+
+#btn_cadastrar_template{
+	width: 500px; height: 70px;
+  margin-top: -250px;
+  margin-left: 700px;
+	border: 0px;
+	-webkit-animation: fadeIn 2s ease-in-out;
+	-moz-animation: fadeIn 2s ease-in-out;
+	-o-animation: fadeIn 2s ease-in-out;
+	animation: fadeIn 2s ease-in-out;
+  position: absolute;
+}
+
+#btn_cadastrar_template input{
+	width: 100%; height: 100%;
+	background-color: transparent;
+	font-size: 20px;
+	border: 2px solid white;
+	color: white;
+	border-radius: 100px;
+	transition: 1s;
+}
+
+#btn_cadastrar_template input:hover{
+	-webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+	transition: 0.3s;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.espaco_categoria{
+  width: 1800px; height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.titulo_categoria{
+  width: 500px; height: 100px;
+  margin-top: -20px;
+}
+
+.titulo_categoria p{
+  font-size: 60px;
+  font-family: 'dosislight';
+  font-weight: bold;
+  color: #088A68;
+  margin-top: 5px;
+}
+
+.jogos_categoria{
+  width: 100%; height: 450px;
+}
+
+.produto{
+  width: 1000px; height: 550px;
+  background-color: black;
+  float: left;
+  margin-left: 10px;
+  border-radius: 5px;
+  float: left;
+}
+
+.produto img{
+  width: 100%; height: 100%;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.produto:hover img{
+  filter: brightness(50%);
+  transition: 1s;
+}
+
+.descricao_jogo_categoria{
+  width: 550px; min-height: 350px;
+  background-color: transparent;
+  margin-top: 0px;
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  border: 0px solid white;
+  filter: brightness(90%);
+}
+
+.descricao_jogo_categoria h1{
+  font-size: 80px;
+  color: white;
+  margin-top: -10px;
+  margin-left:10px;
+  font-family: Calibri;
+}
+
+.descricao_jogo_categoria h2{
+  font-size: 20px;
+  color: white;
+  margin-left:10px;
+  font-family: Calibri;
+  text-align: justify;
+}
+
+.btn_verMAis_categoria{
+	width: 200px; height: 70px;
+	border: 0px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 40px;
+	-webkit-animation: fadeIn 2s ease-in-out;
+	-moz-animation: fadeIn 2s ease-in-out;
+	-o-animation: fadeIn 2s ease-in-out;
+	animation: fadeIn 2s ease-in-out;
+}
+
+.btn_verMAis_categoria input{
+	width: 100%; height: 100%;
+	background-color: transparent;
+  border:2px solid white;
+	font-size: 30px;
+	color: white;
+	border-radius: 100px;
+	transition: 1s;
+}
+
+.btn_verMAis_categoria input:hover{
+	-webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+	transition: 0.3s;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+/*================== CADASTRO ==================*/
+
+#btn_back_home{
+  width: 50px; height: 50px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 3px solid white;
+  transition: 1s;
+  color: white;
+}
+
+#btn_back_home:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+	transition: 0.3s;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+
+#area_cadastro{
+  width: 1780px; height: 800px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid white;
+  -webkit-animation: fadeIn 1s ease-in-out;
+	-moz-animation: fadeIn 1s ease-in-out;
+	-o-animation: fadeIn 1s ease-in-out;
+	animation: fadeIn 1s ease-in-out;
+}
+
+#txt_cadastro{
+  width: 800px; height: 100px;
+  margin-top: -50px;
+  margin-left: 450px;
+}
+
+#area_campos{
+  width: 700px; height: 450px;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 500px;
+  position: absolute;
+}
+
+#area_campos input{
+  width: 600px; height: 40px;
+  margin-left: 40px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: 0px solid;
+  font-size: 20px;
+  color: #088A68;
+  padding-left:10px
+}
+
+#area_foto_botao{
+  width: 700px; height: 200px;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 480px;
+  margin-left: 500px;
+  position: absolute;
+}
+
+#btn_salvar{
+  width: 200px; height: 40px;
+  border-radius: 100px;
+  border: 0px solid;
+  margin-left: 450px;
+  margin-top: 130px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: 1s;
+}
+
+#btn_salvar:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+	transition: 0.3s;
+  background-color: white;
+  color: #000;
+}
+
+
+#txt_cadastro p{
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  color: #088A68;
+  font-family: 'dosislight';
+}
+
+#area_img{
+  width: 900px; height: 800px;
+  float: left;
+  margin-left: 800px;
+  margin-top: -800px;
+  border: 0px solid white;
+}
+
+#area_img img{
+  width: 700px; height: 500px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+/*================== RESULTADO PESQUISA/JOGOS DE TAL PLATAFORMA ====================*/
+
+#espaco{
+  height: 60px;
+}
+
+#titulo_jogos_pesquisa{
+  width: auto; height: auto;
+  border: 0px solid white;
+}
+
+#titulo_jogos_pesquisa h1{
+  font-size: 50px;
+  font-family: 'dosislight';
+  color: white;
+  margin-left: 50px;
+}
+
+#area_info_pesquisa{
+  width: 1600px; height: auto; min-height: 800px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  -webkit-animation: fadeIn 1s ease-in-out;
+	-moz-animation: fadeIn 1s ease-in-out;
+	-o-animation: fadeIn 1s ease-in-out;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.jogo_pesquisa{
+  width: 300px; height: 400px;
+  margin-left: 170px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  float: left;
+  -webkit-animation: fadeIn 2s ease-in-out;
+	-moz-animation: fadeIn 2s ease-in-out;
+	-o-animation: fadeIn 2s ease-in-out;
+	animation: fadeIn 2s ease-in-out;
+  transition: 1s;
+}
+
+.jogo_pesquisa:hover img{
+  filter: brightness(20%);
+  transition: 1s;
+}
+
+#ver_infoJogo_pesquisa{
+  display: none;
+  width: 100px; height: 40px;
+  border: 2px solid white;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 130px;
+  z-index: 50;
+}
+
+#ver_infoJogo_pesquisa p{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 3px;
+  font-family: Calibri;
+}
+
+#ver_infoJogo_pesquisa:hover{
+  background-color: white;
+}
+
+#ver_infoJogo_pesquisa:hover p{
+  color: black;
+  font-weight: bold;
+}
+
+.jogo_pesquisa:hover #ver_infoJogo_pesquisa{
+  display: block;
+}
+
+.info_jogo_pesquisa{
+  width: 100%; height: 120px;
+  margin-top: 0px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'dosislight';
+  text-align: center;
+  border: 1px solid white;
+}
+
+.info_jogo_pesquisa h2{
+  color: #008A68;
+}
+
+.jogo_pesquisa img{
+  width: 100%; height: 300px;
+  border: 0px solid white;
+  transition: 1s;
+  z-index: 1;
+}
+
+/*================== DETALHES JOGO ====================*/
+
+#tudo_detalhesJogo{
+  width: 1760px; height: auto;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid white;
+  border-radius: 10px;
+  margin-top: -100px;
+  -webkit-animation: fadeIn 1s ease-in-out;
+	-moz-animation: fadeIn 1s ease-in-out;
+	-o-animation: fadeIn 1s ease-in-out;
+	animation: fadeIn 1s ease-in-out;
+}
+
+#titulo_detalhesJogo{
+  width: auto; height: 100px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+#titulo_detalhesJogo h1{
+  font-size: 70px;
+  color: #088A68;
+  font-family: 'dosislight';
+  font-weight: bold;
+}
+
+#espaco_detalhesJogo{
+  width: 1760px; height: 600px;
+
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+#preco_jogo_detalhes{
+  width: 200px; height: 100px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 540px;
+  position: relative;
+}
+
+#preco_jogo_detalhes h1{
+  font-size: 100px;
+  font-family: 'dosislight';
+  font-weight: bold;
+  color: #088A68;
+}
+
+#btn_comprar{
+  width: 250px; height: 80px;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin-top: 10px;
+  margin-right: 80px;
+  float: right;
+  color: white;
+  transition: 1s;
+}
+
+#btn_comprar p{
+  font-size: 30px;
+  font-family: Calibri;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#btn_comprar:hover{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#ponto_venda{
+  width: 100px; height: 100px;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin-top: -150px;
+  margin-right: 90px;
+  float: right;
+  color: white;
+  transition: 1s;
+}
+
+#ponto_venda:hover{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#ponto_venda img{
+  width: 70px; height: 70px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#map{
+  width: 1700px;
+  height: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+/*================== RODAPE ====================*/
+footer{
+  width: 100%; height: auto;
+  background-color: #000;
+}
+
+#conteudo_footer{
+  width: 1780px; height: 500px;
+  border: 0px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#info_rodape{
+  width: 1000px; height: auto;
+  border: 0px solid white;
+  margin-left: 400px;
+  margin-top: 50px;
+  float: left;
+}
+
+#info_rodape h1{
+  font-size: 40px;
+  color: white;
+  font-family: 'dosislight';
+  text-align: center;
+}
+
+#info_rodape h2{
+  font-size: 25px;
+  color: white;
+  font-family: 'dosislight';
+  text-align: justify;
+}
+
+#info_rodape h3{
+  font-size: 30px;
+  font-family: 'dosislight';
+  text-align: center;
+}
+
+#info_rodape a{
+  color: white;
+}
+
+#logo_rodape{
+  width: 260px; height: 100px;
+  border: 2px solid white;
+  margin-left: 50px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+#logo_rodape p{
+  font-size: 30px;
+  color: white;
+  font-family: calibri;
+  text-align: center;
+}
+
+#socias{
+  width: 100px; height: auto;
+  border: 0px solid white;
+  margin-left: 1500px;
+  margin-top: 150px;
+  position: absolute;
+}
+
+.sociais{
+  width: 80px; height: 80px;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin-top: 20px;
+  color: white;
+  transition: 1s;
+}
+
+.sociais:hover{
+  width: 80px; height: 80px;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+#socias h1{
+  font-size: 50px;
+  font-family: 'dosislight';
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+#google_translate_element{
+  margin-left: 0px;
+  margin-top: 10px;
+  font-family: 30px;
+}
+
+#google_translate_element select{
+  height: 40px;
+  font-family: 'dosislight';
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  width: 200px;
+  padding-left: 20px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 100px;
+  opacity: 0.7;
+}
+
+#direitos_reservados{
+  width: 500px; height: 100px;
+  border: 0px solid white;
+  position: absolute;
+  margin-left: 650px;;
+  margin-top: 390px;
+  margin-right: auto;
+}
+
+#direitos_reservados p{
+  text-align: center;
+  font-family: Calibri;
+  font-family: 23px;
+  color: #fff;
+  margin-top: 40px;
+}
